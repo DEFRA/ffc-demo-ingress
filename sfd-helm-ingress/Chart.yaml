@@ -2,7 +2,7 @@ apiVersion: v2
 description: A Helm Chart to deploy the ffc-sfd-landing-page application to Kubernetes
 name: ffc-sfd-landing-page
 # this version is automatically updated in the build pipeline
-version: 1.0.2
+version: 1.0.3
 dependencies:
 - name: adp-helm-library
   version: ^1.0.0
