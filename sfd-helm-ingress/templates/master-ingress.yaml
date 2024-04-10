@@ -1,5 +1,5 @@
-{{- include "adp-helm-library.azure-ingress-master" (list . "helm-library.master-ingress") -}}
-{{- define "helm-library.master-ingress" -}}
+{{- include "adp-helm-library.azure-ingress" (list . "sfd-helm-ingress.master-ingress") -}}
+{{- define "sfd-helm-ingress.master-ingress" -}}
 metadata:
   name: {{ .Values.name }}-master
   annotations:
