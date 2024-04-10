@@ -1,5 +1,5 @@
-{{- include "adp-helm-library.azure-ingress" (list . "sfd-helm-ingress.master-ingress") -}}
-{{- define "sfd-helm-ingress.master-ingress" -}}
+{{- include "adp-helm-library.azure-ingress" (list . "ffc-sfd-landing-page.master-ingress") -}}
+{{- define "ffc-sfd-landing-page.master-ingress" -}}
 metadata:
   name: {{ .Values.name }}-master
   annotations:
