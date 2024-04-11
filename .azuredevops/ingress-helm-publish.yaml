@@ -20,4 +20,4 @@ resources:
 extends:
   template: /pipelines/common-helm-acr-publish.yaml@DEFRA-ADPPipelineCommon
   parameters:
-    helmName: "sfd-helm-ingress"
+    helmChartName: "sfd-helm-ingress"
