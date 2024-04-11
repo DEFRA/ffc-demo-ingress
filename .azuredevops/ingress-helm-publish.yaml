@@ -19,6 +19,6 @@ resources:
       ref: sm/341882/HelmOnlyPipeline
 
 extends:
-  template: /pipelines/common-helm-library-acr-publish.yaml@DEFRA-ADPPipelineCommon
+  template: /pipelines/common-helm-acr-publish.yaml@DEFRA-ADPPipelineCommon
   parameters:
     helmLibraryName: "sfd-helm-ingress"
