@@ -2,7 +2,7 @@ pr:
   branches:
     include:
       - main
-  draft: false
+  drafts: false
 
 trigger:
   batch: true
