@@ -37,6 +37,6 @@ extends:
     deployConfigOnly: ${{ parameters.deployConfigOnly }}
     appBuildConfig:
       appFrameworkType: "helm"  
-      projectPath: "ffc-demo-ingress/chart.yaml"
+      projectPath: "ffc-demo-ingress/Chart.yaml"
       imageRepoName: "ffc-demo-ingress"
   
