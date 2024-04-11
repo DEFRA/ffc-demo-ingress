@@ -1,3 +1,13 @@
+parameters:
+  - name: deployFromFeature
+    displayName: "Deploy from Feature Branch"
+    type: boolean
+    default: false
+  - name: deployConfigOnly
+    displayName: "Deploy App Config"
+    type: boolean
+    default: false
+
 pr:
   branches:
     include:
@@ -16,10 +26,17 @@ resources:
       name: DEFRA/adp-pipeline-common
       endpoint: DEFRA
       type: github
-      #ref: refs/heads/main 
       ref: sm/341882/HelmOnlyPipeline
 
 extends:
   template: /pipelines/common-helm-acr-publish.yaml@DEFRA-ADPPipelineCommon
   parameters:
-    helmChartName: "sfd-helm-ingress"
+    programmeName: "ffc"
+    serviceName: "ffc-demo-ingress"
+    deployFromFeature: ${{ parameters.deployFromFeature }}
+    deployConfigOnly: ${{ parameters.deployConfigOnly }}
+    appBuildConfig:
+      appFrameworkType: "helm"  
+      projectPath: "ffc-demo-ingress/chart.yaml"
+      imageRepoName: "ffc-demo-ingress"
+  
