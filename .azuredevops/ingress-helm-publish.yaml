@@ -24,7 +24,7 @@ resources:
       ref: sm/341882/HelmOnlyPipeline
 
 extends:
-  template: /pipelines/common-helm-acr-publish.yaml@DEFRA-ADPPipelineCommon
+  template: /pipelines/common-app-build.yaml@DEFRA-ADPPipelineCommon
   parameters:
     programmeName: "ffc"
     serviceName: "ffc-demo-ingress"
