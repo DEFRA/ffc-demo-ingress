@@ -34,5 +34,5 @@ extends:
       appFrameworkType: "helm"  
       projectPath: "helm/ffc-demo-ingress/Chart.yaml"
       imageRepoName: "ffc-demo-ingress"
-      stepsToSkip: 'Build;BuildDockerImage;PreDeploymentTests;AppConfigImport;PostDeploymentTests'
+      stepsToSkip: "Build;BuildDockerImage;PreDeploymentTests;AppConfigImport;PostDeploymentTests"
   
