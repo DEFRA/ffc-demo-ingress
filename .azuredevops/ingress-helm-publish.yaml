@@ -29,7 +29,6 @@ extends:
   parameters:
     programmeName: "ffc"
     serviceName: "ffc-demo-ingress"
-    stepsToSkip: "Build;BuildDockerImage;PreDeploymentTests;AppConfigImport;PostDeploymentTests"
     deployFromFeature: ${{ parameters.deployFromFeature }}  
     includePlatformEnvs: true  
     appBuildConfig:
