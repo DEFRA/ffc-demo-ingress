@@ -21,7 +21,7 @@ resources:
       name: DEFRA/adp-pipeline-common
       endpoint: DEFRA
       type: github
-      ref: sm/341882/HelmOnlyPipeline
+      ref: refs/heads/main
 
 extends:
   template: /pipelines/common-app-build.yaml@DEFRA-ADPPipelineCommon
